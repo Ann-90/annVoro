@@ -1,0 +1,322 @@
+@font-face {
+	font-family: 'Gilroy-Medium';
+    src: 
+        local('Gilroy-Medium'),
+		url('./fonts/gilroy-medium/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-medium/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-medium/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/gilroy-medium/gilroy-medium.svg#gilroy-medium') format('svg'), /* Chrome < 4, Legacy iOS */
+        url('./fonts/gilroy-medium/gilroy-medium.eot') format('eot'), /* IE 9 Compatibility Mode */
+        url('./fonts/gilroy-medium/gilroy-medium.eot?#iefix') format('embedded-opentype'); /* IE < 9 */
+        font-style: normal;    
+        font-weight: normal;
+        font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+    src:
+        local('Gilroy-Bold'),
+		url('./fonts/gilroy-bold/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-bold/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-bold/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/gilroy-bold/gilroy-bold.svg#gilroy-bold') format('svg'), /* Chrome < 4, Legacy iOS */
+        url('./fonts/gilroy-bold/gilroy-bold.eot') format('eot'), /* IE 9 Compatibility Mode */
+        url('./fonts/gilroy-bold/gilroy-bold.eot?#iefix') format('embedded-opentype'); /* IE < 9 */
+        font-style: normal;
+        font-weight: bold;
+        font-display: swap;
+    }
+
+    /*global*/
+
+html, body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color: #070707;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+h1, h2, h3 {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.dropdown, .maininfo, .skill_img, .social, .skills_stars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+.myexamples {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+iframe {
+    height: 522px;
+    width: calc(100% - 72px);
+    margin: 50px 0px;
+    border: 0;
+}
+.dropdown span:not(:first-child), .lang_ru, .social_desc {
+    color: #828282;
+}
+
+.aboutme, .portfolio {
+    background-color: #F6F6F6;
+}
+ a {
+     text-decoration: none;
+     color: inherit;
+
+ }
+ a[href]:hover, .lang_ru p:hover, .lang_eng p:hover {
+    cursor: pointer;
+    opacity: 0.5;
+ }
+
+ /*.dropImg, .dropdown span, .lang_btn_header p, .lang_btn_main p, .tools img, .social img, button, */
+
+/*certain*/
+div, span, p, h1, h2, h3, figure, img {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    padding: 0px 250px;
+}
+.dropdown {
+    border-bottom: 1px solid #828282;
+    padding: 32px 0px 40px 0px;
+}
+.dropImg {
+    display: none;
+}
+.maininfo {
+    align-items: flex-end;
+    text-align: start;
+    padding: 40px 250px 30px 250px;
+}
+h1 {
+    margin-bottom: 0px;
+    font-size: 47.3392px;
+    line-height: 59px;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.add {
+    display: none;
+}
+.lang_ru p, .lang_eng p {
+    font-weight: bold;
+    text-align: start;   
+}
+
+.lang_btn_main p, .lang_btn_header p {
+    transform-origin: left top;
+    transform: rotate(-90deg);
+    margin-bottom: 0px;
+}
+
+.lang_ru {
+    border-top: 5px solid black;   
+    margin-left: 30px; 
+}
+
+.im figure {
+    margin: 50px 250px 100px 250px;
+}
+.im img {
+    width: calc(100vw - 500px);
+    height: 390px;
+    object-fit: cover;
+}
+
+.aboutme, .skills, .portfolio, .contacts {
+    padding: 110px 250px 100px 250px;
+}
+
+.aboutme p {
+    margin: 30px 0px 0px 0px;
+}
+
+.skills p {
+    margin: 30px 0px 60px 0px;
+}
+
+.skill_img figure img {
+    height: 90px;
+}
+
+.skill_img figcaption {
+    color: #828282;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 25px 0px 40px 0px;
+}
+
+.skills_stars {
+    width: 100px;
+}
+.skills_stars img {
+    width: 15px;
+}
+
+.contacts p:not(:last-child) {
+    margin: 30px 0px;
+}
+
+
+button {
+    background: #070707;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+    width: 170px;
+    height: 40px;
+}
+
+.social {
+    max-width: 350px;
+    margin: auto;
+    padding: 100px 0px 60px 0px;
+    
+}
+.social img {
+    width: 40px;
+    
+}
+
+@media screen and (min-width: 300px) and (max-width: 919px) {
+    .dropdown, .maininfo, .skill_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;   
+    }
+    header {
+        padding: 65px 26px;
+    }
+
+.dropdown {
+    padding: 0px;
+}
+    .dropImg {
+        display: initial;
+    }
+   .hat {
+       display: none;
+   }
+    .dropImg:hover ~ .hat {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        height: calc(100vh - 65px);
+        z-index: 10;
+        width: 80%;
+        background: #FFFFFF;
+    }
+    .dropdown {
+        border-bottom: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .dropdown span {
+        margin-bottom: 65px;
+    }
+
+    .add {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100%;
+    }
+    .cross img {
+        width: 23px;
+    }
+    .lang_btn_main {
+        display: none;
+    }
+    .lang_btn_header p {
+        transform-origin: right bottom;
+        transform: rotate(90deg);
+        margin-bottom: 0px;
+    }
+    
+    
+    .maininfo {
+        align-items: flex-start;
+        padding: 65px 26px 0px 26px;
+    }
+    h1 {
+        margin-bottom: 25px;
+    }
+    
+    .im figure {
+        margin: 35px 29px 83px 29px;
+        
+    }
+    .im img {
+         width: calc(100vw - 58px);
+         height: 470px;
+         object-fit: cover;
+    }
+    
+    
+    .aboutme, .skills, .portfolio, .contacts {
+        padding: 80px 29px;
+    }
+    
+    .skills_stars {
+        margin: 0px auto 80px auto;
+    }
+    iframe {
+        width: calc(100% - 58px);
+    }
+    
+    button {
+        width: 250px;
+    }
+    
+    .social {
+        max-width: 350px;
+        margin: auto;
+        padding: 50px 0px;
+        
+    }
+    .social img {
+        width: 40px;   
+    }
+    
+}
+
+@media screen and (min-width: 920px) and (max-width: 1439px) {
+    header {
+        padding: 32px 72px 40px 72px;
+    }
+    .maininfo {
+        padding: 40px 72px 30px 72px;
+    }
+    
+    .im figure {
+        margin: 50px 72px 100px 72px;
+    }
+    .im img {
+        width: calc(100vw - 144px);
+    }
+    
+    .aboutme, .skills, .portfolio, .contacts {
+        padding: 110px 72px 100px 72px;
+    }    
+
+}
