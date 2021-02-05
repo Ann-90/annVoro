@@ -1,72 +1,209 @@
 <!DOCTYPE html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
 <html>
-  <header>
-    <div class="menu">
-      <img
-        id="logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Unipro_logo.svg.jpg"
-        alt=""
-      />
-      <span class="blueline"> </span>
-    </div>
-  </header>
-  <body>
-    <div class="wrapper">
-      <div class="mainphoto">
-        <img
-          id="mainimage"
-          src="https://unipro.energy/upload/iblock/35e/35ece4180f75081e911d9eaf58cae9a6.jpg"
-          alt=""
-        />
-        <span class="mainimage_decoration"></span>
-      </div>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="scripts.js"></script>
+        <title>annVoro</title>
+    </head>
 
-      <div class="quote_block">
-        <h3>Котировки</h3>
-      </div>
-
-      <div class="news_block">
-        <h3>Новости</h3>
-      </div>
-
-      <div class="infoblock1">
-        <h3>Раскрытие информации</h3>
-      </div>
-      <div class="infoblock2">
-        <h3>Закупки и продажи</h3>
-      </div>
-
-      <div class="infoblock3">
-        <figure>
-          <img
-            src="https://unipro.energy/upload/iblock/35e/35ece4180f75081e911d9eaf58cae9a6.jpg"
-            alt=""
-          />
+    
+    <header>
+        <figure class="dropImg">
+            <img src="./public/dropdown.svg" alt=""/>
         </figure>
-        <div class="Textblock">
-          <h3>Раскрытие информации</h3>
+    
+        <div class="hat">
+            <div class="dropdown">
+                <span><a href="#Home">Home</a></span>
+                <span><a href="#About">About</a></span>
+                <span><a href="#Skills">Skills</a></span>
+                <span><a href="#Portfolio">Portfolio</a></span>
+                <span><a href="#Contacts">Contacts</a></span>
+            </div>
 
-          <p>Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</p>
-          <p>Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</p>
+            <div class="add">
+                <figure class="cross">
+                    <img src="./public/cross.svg" alt=""/>
+                </figure>
+            
+                <div class="lang_btn_header">
+                    <span class="lang_eng"><p>ENG</p></span>
+                    <span class="lang_ru"><p>RU</p></span>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+    </header>
+    <body>
+        <div class="maininfo">
+            
+            <a name="Home"><h1>Ann <br />
+                    Vorobyeva
+                </h1></a>
+            
+                <span>
+                    <p>JUNIOR FRONT-END DEVELOPER
+                        <br />
+                        Moscow
+                    </p>
+                </span>
 
-  <footer>
-    <div class="footerwrapper"></div>
-  </footer>
+            <div class="lang_btn_main">
+                <span class="lang_eng"><p>ENG</p></span>
+                <span class="lang_ru"><p>RU</p></span>      
+            </div>
+        </div>
+
+        <div class="im">
+            <figure class="myface">
+                <img src="./public/forport.png" alt="Здесь могла быть ваша фотография">
+            </figure>
+        </div>
+
+        <div class="aboutme">
+            <h2>
+                <a name="About"></a>About me</a>
+            </h2>
+            
+            <p>Hello! My name is Ann. I am a junior frontend-developer.</p>
+            <p>Currently I am working in a company rendering web-pages with Figma templates as examples. I am making interactive elements with Next.js (React framework). So I got used to working using frameforks which make development faster and more convinient.</p>
+            <p>If you are interested in people with unconventional experience I submit my candidacy. Until recently I have been working in a humanitarian field. I study computer science on my own. I deal with new information well.</p>
+            <p>I want to move forward doing useful job in a good team</p>
+        </div>
+        
+        <div class="skills">
+            <h2>
+                <a name="Skills">Skills</a>
+            </h2>
+            
+            <p>
+                I work in such programms as:
+            </p>
+
+            <div class="skill_img">
+                <div class="tools">
+                    <figure>
+                        <img src="./public/tools_logo/html-5.svg" alt="Здесь могла быть ваша фотография">
+                        <figcaption>
+                            HTML5 / CSS3
+                        </figcaption>
+                    </figure>
+                
+                    <div class="skills_stars">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
+                    </div>
+                </div>
+                
+                <div class="tools">
+                <figure>
+                    <img src="./public/tools_logo/javascript.svg" alt="Здесь могла быть ваша фотография">
+                    <figcaption>
+                        JS
+                    </figcaption>
+                </figure>
+                
+                    <div class="skills_stars">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
+                    </div>
+                </div>
+
+
+                <div class="tools">
+                <figure>
+                    <img src="./public/tools_logo/react.svg" alt="Здесь могла быть ваша фотография">
+                    <figcaption>
+                        React
+                    </figcaption>
+                </figure>
+                
+                    <div class="skills_stars">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
+                    </div>
+                </div>
+                
+
+                <div class="tools">
+                    <figure>
+                        <img src="./public/tools_logo/python-5.svg" alt="Здесь могла быть ваша фотография">
+                        <figcaption>
+                            Python
+                        </figcaption>
+                    </figure>
+                    <div class="skills_stars">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
+                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="portfolio">
+            <h2>
+                <a name="Portfolio">Portfolio</a>
+            </h2>
+            <!-- <div class="myexamples">
+                <iframe src="https://gomining.com/main"><a href="gomining.com">Майнинг-отель</a></iframe>
+                <a href="gomining.com">gomining.com</a>
+            </div> -->
+        </div>
+
+        <div class="contacts">
+            <h2>
+                <a name="Contacts">Contacts</a>
+            </h2>
+            
+            <p>Want to know more or just chat?
+                <br />
+                You are welcome!
+            </p>
+            <button>
+                Send message
+            </button>
+        
+
+            <div class="social">
+                <figure>
+                    <a href="https://vk.com/feed"><img src="./public/telegram.png" alt="Здесь могла быть ваша фотография"></a>
+                </figure>
+
+                <figure>
+                    <img src="./public/wapp.png" alt="Здесь могла быть ваша фотография">
+                </figure>
+
+                
+                <figure>
+                    <img src="./public/skype.png" alt="Здесь могла быть ваша фотография">
+                </figure>
+
+
+            </div>
+            <div class="social_desc">
+                <p>
+                    Contact me on <br />
+                    LinkedIn / Telegram / WhatsApp / Skype
+                </p>
+            </div>
+    </div>
+    </body>   
+   
+    
 </html>
-<script>
-  let elem = document.querySelectorAll('div[class*="infoblock"]');
-  function showMore(e) {
-    this.classList.toggle("moreinfo");
-    console.log(this);
-  }
-  elem.forEach((e) => e.addEventListener("click", showMore));
-</script>
