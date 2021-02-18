@@ -1,209 +1,234 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="scripts.js"></script>
-        <title>annVoro</title>
-    </head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script async type="text/javascript" src="scripts.js"></script>
+    <!-- <script type="module" src="translations.js"></script> -->
+    <title>annVoro</title>
+  </head>
 
-    
-    <header>
-        <figure class="dropImg">
-            <img src="./public/dropdown.svg" alt=""/>
+  <header>
+    <div class="hat">
+      <div class="dropdown">
+        <span><a href="#Home" key="Home">Главная</a></span>
+        <span><a href="#About" key="About">О себе</a></span>
+        <span><a href="#Skills" key="Skills">Что я умею</a></span>
+        <span><a href="#Portfolio" key="Portfolio">Портфолио</a></span>
+        <span><a href="#Contacts" key="Contacts">Контакты</a></span>
+      </div>
+
+      <div class="add">
+        <figure class="cross">
+          <img src="./public/cross.svg" alt="" />
         </figure>
-    
-        <div class="hat">
-            <div class="dropdown">
-                <span><a href="#Home">Home</a></span>
-                <span><a href="#About">About</a></span>
-                <span><a href="#Skills">Skills</a></span>
-                <span><a href="#Portfolio">Portfolio</a></span>
-                <span><a href="#Contacts">Contacts</a></span>
-            </div>
 
-            <div class="add">
-                <figure class="cross">
-                    <img src="./public/cross.svg" alt=""/>
-                </figure>
-            
-                <div class="lang_btn_header">
-                    <span class="lang_eng"><p>ENG</p></span>
-                    <span class="lang_ru"><p>RU</p></span>
-                </div>
-            </div>
+        <div class="lang_btn_header">
+          <span class="lang_eng"><p>ENG</p></span>
+          <span class="lang_ru"><p>RU</p></span>
         </div>
-    </header>
-    <body>
-        <div class="maininfo">
-            
-            <a name="Home"><h1>Ann <br />
-                    Vorobyeva
-                </h1></a>
-            
-                <span>
-                    <p>JUNIOR FRONT-END DEVELOPER
-                        <br />
-                        Moscow
-                    </p>
-                </span>
-
-            <div class="lang_btn_main">
-                <span class="lang_eng"><p>ENG</p></span>
-                <span class="lang_ru"><p>RU</p></span>      
-            </div>
-        </div>
-
-        <div class="im">
-            <figure class="myface">
-                <img src="./public/forport.png" alt="Здесь могла быть ваша фотография">
-            </figure>
-        </div>
-
-        <div class="aboutme">
-            <h2>
-                <a name="About"></a>About me</a>
-            </h2>
-            
-            <p>Hello! My name is Ann. I am a junior frontend-developer.</p>
-            <p>Currently I am working in a company rendering web-pages with Figma templates as examples. I am making interactive elements with Next.js (React framework). So I got used to working using frameforks which make development faster and more convinient.</p>
-            <p>If you are interested in people with unconventional experience I submit my candidacy. Until recently I have been working in a humanitarian field. I study computer science on my own. I deal with new information well.</p>
-            <p>I want to move forward doing useful job in a good team</p>
-        </div>
-        
-        <div class="skills">
-            <h2>
-                <a name="Skills">Skills</a>
-            </h2>
-            
-            <p>
-                I work in such programms as:
-            </p>
-
-            <div class="skill_img">
-                <div class="tools">
-                    <figure>
-                        <img src="./public/tools_logo/html-5.svg" alt="Здесь могла быть ваша фотография">
-                        <figcaption>
-                            HTML5 / CSS3
-                        </figcaption>
-                    </figure>
-                
-                    <div class="skills_stars">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
-                    </div>
-                </div>
-                
-                <div class="tools">
-                <figure>
-                    <img src="./public/tools_logo/javascript.svg" alt="Здесь могла быть ваша фотография">
-                    <figcaption>
-                        JS
-                    </figcaption>
-                </figure>
-                
-                    <div class="skills_stars">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
-                    </div>
-                </div>
-
-
-                <div class="tools">
-                <figure>
-                    <img src="./public/tools_logo/react.svg" alt="Здесь могла быть ваша фотография">
-                    <figcaption>
-                        React
-                    </figcaption>
-                </figure>
-                
-                    <div class="skills_stars">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
-                    </div>
-                </div>
-                
-
-                <div class="tools">
-                    <figure>
-                        <img src="./public/tools_logo/python-5.svg" alt="Здесь могла быть ваша фотография">
-                        <figcaption>
-                            Python
-                        </figcaption>
-                    </figure>
-                    <div class="skills_stars">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
-                        <img src="./public/Star-2.svg" alt="Здесь могла быть ваша фотография">
-                    </div>
-                </div>
-
-            </div>
-
-            
-        </div>
-
-        <div class="portfolio">
-            <h2>
-                <a name="Portfolio">Portfolio</a>
-            </h2>
-            <!-- <div class="myexamples">
-                <iframe src="https://gomining.com/main"><a href="gomining.com">Майнинг-отель</a></iframe>
-                <a href="gomining.com">gomining.com</a>
-            </div> -->
-        </div>
-
-        <div class="contacts">
-            <h2>
-                <a name="Contacts">Contacts</a>
-            </h2>
-            
-            <p>Want to know more or just chat?
-                <br />
-                You are welcome!
-            </p>
-            <button>
-                Send message
-            </button>
-        
-
-            <div class="social">
-                <figure>
-                    <a href="https://vk.com/feed"><img src="./public/telegram.png" alt="Здесь могла быть ваша фотография"></a>
-                </figure>
-
-                <figure>
-                    <img src="./public/wapp.png" alt="Здесь могла быть ваша фотография">
-                </figure>
-
-                
-                <figure>
-                    <img src="./public/skype.png" alt="Здесь могла быть ваша фотография">
-                </figure>
-
-
-            </div>
-            <div class="social_desc">
-                <p>
-                    Contact me on <br />
-                    LinkedIn / Telegram / WhatsApp / Skype
-                </p>
-            </div>
+      </div>
     </div>
-    </body>   
-   
-    
+  </header>
+  <body>
+    <div class="mobile_block">
+      <div class="maininfo">
+        <a name="Home"
+          ><h1 key="my_name">
+            Анна <br />
+            Воробьева
+          </h1></a
+        >
+
+        <span>
+          <p key="post">JUNIOR ФРОНТЕНД РАЗРАБОТЧИК<br />Москва</p>
+        </span>
+
+        <div class="lang_btn_main">
+          <span class="lang_eng"><p>ENG</p></span>
+          <span class="lang_ru"><p>RU</p></span>
+        </div>
+      </div>
+
+      <figure class="dropImg">
+        <img src="./public/dropdown.svg" alt="" />
+      </figure>
+    </div>
+
+    <div class="im">
+      <figure class="myface">
+        <img src="./public/forport.png" alt="" />
+      </figure>
+    </div>
+
+    <div class="aboutme">
+      <h2>
+        <a name="About" key="About">О себе</a>
+      </h2>
+
+      <p key="about_1">
+        Здравствуйте! Меня зовут Анна. Я - начинающий веб-разработчик.
+        Веб-технологии изучаю самостоятельно.
+      </p>
+      <p key="about_2">
+        С сентября 2020 года я работала помощником веб-разработчика, занимаясь
+        отрисовкой интерфейсов по готовым шаблонам Figma. Интерактивные элементы
+        реализовывались при помощи Next.js (React фреймворка). Я привыкла
+        работать с фреймворками, которые делают разработку быстрее, удобнее и
+        качественнее.
+      </p>
+      <p key="about_3">
+        Я - специалист с нестандартным бэкграундом. До недавнего времени
+        работала в глубоко гуманитарной сфере. Так как учусь самостоятельно, не
+        боюсь разбинаться с темами, с котрыми не работала. По этой же причине я
+        очень люблю тестовые задания: они помогают проверять свои знания,
+        тренировать навык выполнять работу оперативно и расширять кругозор, если
+        задание пока не по силам.
+      </p>
+      <p key="about_4">
+        Хочу двигаться вперед и вглубь, погружаясь в тонкости разработки и
+        выполняя полезную работу в интересной команде.
+      </p>
+    </div>
+
+    <div class="skills">
+      <h2>
+        <a name="Skills" key="Skills">Что я умею</a>
+      </h2>
+
+      <p key="skills_title">Я работаю с такими технологиями:</p>
+
+      <div class="skill_img">
+        <div class="tools">
+          <figure>
+            <img src="./public/tools_logo/html-5.svg" alt="" />
+            <figcaption>HTML5 / CSS3</figcaption>
+          </figure>
+
+          <div class="skills_stars">
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star-2.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="tools">
+          <figure>
+            <img src="./public/tools_logo/javascript.svg" alt="" />
+            <figcaption>JS</figcaption>
+          </figure>
+
+          <div class="skills_stars">
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star-2.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="tools">
+          <figure>
+            <img src="./public/tools_logo/react.svg" alt="" />
+            <figcaption>React</figcaption>
+          </figure>
+
+          <div class="skills_stars">
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star-2.svg" alt="" />
+            <img src="./public/Star-2.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="tools">
+          <figure>
+            <img src="./public/tools_logo/python-5.svg" alt="" />
+            <figcaption>Python</figcaption>
+          </figure>
+          <div class="skills_stars">
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star.svg" alt="" />
+            <img src="./public/Star-2.svg" alt="" />
+            <img src="./public/Star-2.svg" alt="" />
+            <img src="./public/Star-2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio">
+      <h2>
+        <a name="Portfolio" key="Portfolio">Портфолио</a>
+      </h2>
+      <div class="myexamples">
+        <iframe src="https://gomining.com"
+          ><a href="gomining.com">Майнинг-отель</a></iframe
+        >
+        <a href="https://gomining.com">gomining.com</a>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <h2>
+        <a name="Contacts" key="Contacts">Контакты</a>
+      </h2>
+
+      <p key="contact_text">
+        Хотите уточнить информацию? <br />
+        Напишите мне
+      </p>
+      <button key="send_btn">Отправить сообщение</button>
+
+      <div class="formcard">
+        <figure class="closeform">
+          <img src="./public/close_btn.svg" />
+        </figure>
+        <h2>Отправьте мне сообщение</h2>
+        <form action="mailto:ann@fastlaw.io" enctype="text/plain" method="post">
+          <input type="text" name="name" placeholder="К сожалению," />
+          <input
+            type="email"
+            name="address"
+            placeholder="этот раздел еще не готов"
+          />
+          <textarea
+            name="letter"
+            placeholder="Если вы нажмете кнопку 'Отправить сообщение' ниже, вы сможете написать мне на почту через почтовый сервис. Или закройте форму и кликните по иконкам мессенджеров ниже"
+          ></textarea>
+          <input type="submit" key="send_text" value="Отправить сообщение" />
+        </form>
+      </div>
+
+      <div class="social">
+        <figure>
+          <a href="https://t.me/annv0r0"
+            ><img src="./public/telegram.png" alt=""
+          /></a>
+        </figure>
+
+        <figure>
+          <a href="https://wa.me/+79032733469">
+            <img src="./public/wapp.png" alt="" />
+          </a>
+        </figure>
+
+        <figure>
+          <a href="https://join.skype.com/invite/gKSHXonQd79C"
+            ><img src="./public/skype.png" alt="" />
+          </a>
+        </figure>
+      </div>
+
+      <div class="social_desc">
+        <p key="send_text">
+          Свяжитесь со мной через <br />
+          Telegram / WhatsApp / Skype
+        </p>
+      </div>
+    </div>
+  </body>
 </html>

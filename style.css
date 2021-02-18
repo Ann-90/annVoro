@@ -1,322 +1,477 @@
 @font-face {
-	font-family: 'Gilroy-Medium';
-    src: 
-        local('Gilroy-Medium'),
-		url('./fonts/gilroy-medium/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
-		url('./fonts/gilroy-medium/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('./fonts/gilroy-medium/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
-        url('./fonts/gilroy-medium/gilroy-medium.svg#gilroy-medium') format('svg'), /* Chrome < 4, Legacy iOS */
-        url('./fonts/gilroy-medium/gilroy-medium.eot') format('eot'), /* IE 9 Compatibility Mode */
-        url('./fonts/gilroy-medium/gilroy-medium.eot?#iefix') format('embedded-opentype'); /* IE < 9 */
-        font-style: normal;    
-        font-weight: normal;
-        font-display: swap;
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy-Medium"),
+    url("./fonts/gilroy-medium/gilroy-medium.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/gilroy-medium/gilroy-medium.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./fonts/gilroy-medium/gilroy-medium.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/gilroy-medium/gilroy-medium.svg#gilroy-medium") format("svg"),
+    /* Chrome < 4, Legacy iOS */ url("./fonts/gilroy-medium/gilroy-medium.eot")
+      format("eot"),
+    /* IE 9 Compatibility Mode */
+      url("./fonts/gilroy-medium/gilroy-medium.eot?#iefix")
+      format("embedded-opentype"); /* IE < 9 */
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Gilroy-Bold';
-    src:
-        local('Gilroy-Bold'),
-		url('./fonts/gilroy-bold/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('./fonts/gilroy-bold/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('./fonts/gilroy-bold/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-        url('./fonts/gilroy-bold/gilroy-bold.svg#gilroy-bold') format('svg'), /* Chrome < 4, Legacy iOS */
-        url('./fonts/gilroy-bold/gilroy-bold.eot') format('eot'), /* IE 9 Compatibility Mode */
-        url('./fonts/gilroy-bold/gilroy-bold.eot?#iefix') format('embedded-opentype'); /* IE < 9 */
-        font-style: normal;
-        font-weight: bold;
-        font-display: swap;
-    }
-
-    /*global*/
-
-html, body {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    color: #070707;
-    font-family: 'Gilroy-Medium', sans-serif;
-    font-size: 18px;
-    line-height: 22px;
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold"),
+    url("./fonts/gilroy-bold/gilroy-bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/gilroy-bold/gilroy-bold.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./fonts/gilroy-bold/gilroy-bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/gilroy-bold/gilroy-bold.svg#gilroy-bold") format("svg"),
+    /* Chrome < 4, Legacy iOS */ url("./fonts/gilroy-bold/gilroy-bold.eot")
+      format("eot"),
+    /* IE 9 Compatibility Mode */
+      url("./fonts/gilroy-bold/gilroy-bold.eot?#iefix")
+      format("embedded-opentype"); /* IE < 9 */
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
 }
 
-h1, h2, h3 {
-    font-family: 'Gilroy-Bold', sans-serif;
+/*global*/
+
+html,
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  color: #070707;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: "Gilroy-Bold", sans-serif;
 }
 
-.dropdown, .maininfo, .skill_img, .social, .skills_stars {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;   
+.dropdown,
+.maininfo,
+.skill_img,
+.social,
+.skills_stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .myexamples {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 iframe {
-    height: 522px;
-    width: calc(100% - 72px);
-    margin: 50px 0px;
-    border: 0;
+  height: 522px;
+  width: calc(100% - 72px);
+  margin: 50px 0px;
+  border: 0;
 }
-.dropdown span:not(:first-child), .lang_ru, .social_desc {
-    color: #828282;
+.dropdown span:not(:first-child),
+.lang_ru,
+.social_desc {
+  color: #828282;
 }
 
-.aboutme, .portfolio {
-    background-color: #F6F6F6;
+.aboutme,
+.portfolio {
+  background-color: #f6f6f6;
 }
- a {
-     text-decoration: none;
-     color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.cross:hover,
+.dropImg:hover,
+a[href]:hover,
+.lang_ru p:hover,
+.lang_eng p:hover,
+[type="submit"]:hover,
+button:hover,
+.closeform img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
 
- }
- a[href]:hover, .lang_ru p:hover, .lang_eng p:hover {
-    cursor: pointer;
-    opacity: 0.5;
- }
-
- /*.dropImg, .dropdown span, .lang_btn_header p, .lang_btn_main p, .tools img, .social img, button, */
+/*.dropImg, .dropdown span, .lang_btn_header p, .lang_btn_main p, .tools img, .social img, button, */
 
 /*certain*/
-div, span, p, h1, h2, h3, figure, img {
-    padding: 0px;
-    margin: 0px;
+div,
+span,
+p,
+h1,
+h2,
+h3,
+figure,
+img {
+  padding: 0px;
+  margin: 0px;
 }
 header {
-    padding: 0px 250px;
+  padding: 0px 250px;
 }
 .dropdown {
-    border-bottom: 1px solid #828282;
-    padding: 32px 0px 40px 0px;
+  border-bottom: 1px solid #828282;
+  padding: 32px 0px 40px 0px;
 }
 .dropImg {
-    display: none;
+  display: none;
 }
 .maininfo {
-    align-items: flex-end;
-    text-align: start;
-    padding: 40px 250px 30px 250px;
+  align-items: flex-end;
+  text-align: start;
+  padding: 40px 250px 30px 250px;
 }
 h1 {
-    margin-bottom: 0px;
-    font-size: 47.3392px;
-    line-height: 59px;
+  font-size: 47.3392px;
+  line-height: 59px;
 }
 
 h2 {
-    font-size: 34px;
-    line-height: 42px;
+  font-size: 34px;
+  line-height: 42px;
 }
 
 .add {
-    display: none;
+  display: none;
 }
-.lang_ru p, .lang_eng p {
-    font-weight: bold;
-    text-align: start;   
+.lang_ru p,
+.lang_eng p {
+  font-weight: bold;
+  text-align: start;
 }
 
-.lang_btn_main p, .lang_btn_header p {
-    transform-origin: left top;
-    transform: rotate(-90deg);
-    margin-bottom: 0px;
+.lang_btn_main p,
+.lang_btn_header p {
+  transform-origin: left top;
+  transform: rotate(-90deg);
+  margin-bottom: 0px;
 }
 
 .lang_ru {
-    border-top: 5px solid black;   
-    margin-left: 30px; 
+  border-top: 5px solid black;
+  margin-left: 30px;
 }
 
 .im figure {
-    margin: 50px 250px 100px 250px;
+  margin: 50px 250px 100px 250px;
 }
 .im img {
-    width: calc(100vw - 500px);
-    height: 390px;
-    object-fit: cover;
+  width: calc(100vw - 500px);
+  height: 390px;
+  object-fit: cover;
 }
 
-.aboutme, .skills, .portfolio, .contacts {
-    padding: 110px 250px 100px 250px;
+.aboutme,
+.skills,
+.portfolio,
+.contacts {
+  padding: 110px 250px 100px 250px;
 }
 
 .aboutme p {
-    margin: 30px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
 }
 
 .skills p {
-    margin: 30px 0px 60px 0px;
+  margin: 30px 0px 60px 0px;
 }
 
 .skill_img figure img {
-    height: 90px;
+  height: 90px;
 }
 
 .skill_img figcaption {
-    color: #828282;
-    font-size: 14px;
-    line-height: 17px;
-    margin: 25px 0px 40px 0px;
+  color: #828282;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 25px 0px 40px 0px;
 }
 
 .skills_stars {
-    width: 100px;
+  width: 100px;
 }
 .skills_stars img {
-    width: 15px;
+  width: 15px;
 }
 
 .contacts p:not(:last-child) {
-    margin: 30px 0px;
+  margin: 30px 0px;
 }
 
-
+button,
+[type="submit"] {
+  background: #070707;
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+}
 button {
-    background: #070707;
-    color: #FFFFFF;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
-    width: 170px;
-    height: 40px;
+  width: 170px;
+  height: 40px;
 }
 
 .social {
-    max-width: 350px;
-    margin: auto;
-    padding: 100px 0px 60px 0px;
-    
+  max-width: 350px;
+  margin: auto;
+  padding: 100px 0px 60px 0px;
 }
 .social img {
-    width: 40px;
-    
+  width: 40px;
+}
+.social_desc {
+  margin: 40px 0px;
+}
+
+/* form */
+.formcard {
+  position: fixed;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.98;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 50vh;
+  padding: 8%;
+}
+.formcard figure {
+  width: 100%;
+}
+.closeform img {
+  margin-left: calc(100% - 34px);
+}
+.formcard h2 {
+  margin-bottom: 20px;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "name addr"
+    "question question"
+    "submit submit";
+}
+input,
+textarea {
+  font: inherit;
+  padding-left: 10px;
+}
+textarea {
+  padding-top: 10px;
+}
+[name="name"] {
+  grid-area: name;
+  margin-right: 10px;
+  height: 50px;
+}
+
+[name="address"] {
+  grid-area: addr;
+  margin-left: 10px;
+  height: 50px;
+}
+
+[name="letter"] {
+  grid-area: question;
+  height: 200px;
+  margin-top: 20px;
+  overflow: scroll;
+}
+
+[type="submit"] {
+  grid-area: submit;
+  width: 270px;
+  height: 50px;
+  margin: 20px auto;
+}
+.hideform {
+  display: none;
 }
 
 @media screen and (min-width: 300px) and (max-width: 919px) {
-    .dropdown, .maininfo, .skill_img {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;   
-    }
-    header {
-        padding: 65px 26px;
-    }
+  body {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  h1 {
+    font-size: 42px;
+    line-height: 53px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .dropdown,
+  .maininfo,
+  .skill_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header {
+    /* исправить */
+    padding: 65px 26px;
+    font-size: 28px;
+    line-height: 32px;
+  }
 
-.dropdown {
-    padding: 0px;
+  .hideheader {
+    display: none;
+  }
+
+  .hat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    height: calc(100vh - 65px);
+    z-index: 10;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
+  }
+  .dropdown {
+    border-bottom: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .dropdown span {
+    margin-bottom: 65px;
+  }
+
+  .add {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+  }
+  .cross img {
+    width: 23px;
+    transform-origin: left top;
+    transform: rotate(90deg);
+  }
+  .lang_btn_main {
+    display: none;
+  }
+  .mobile_block {
+    margin-top: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dropImg {
+    display: initial;
+    margin-right: 26px;
+  }
+  .maininfo {
+    align-items: flex-start;
+    padding: 0px 26px;
+  }
+  h1 {
+    margin-bottom: 25px;
+  }
+
+  .im figure {
+    margin: 35px 29px 83px 29px;
+  }
+  .im img {
+    width: calc(100vw - 58px);
+    height: 470px;
+    object-fit: cover;
+  }
+
+  .aboutme,
+  .skills,
+  .portfolio,
+  .contacts {
+    padding: 80px 29px;
+  }
+
+  .skills_stars {
+    margin: 0px auto 80px auto;
+  }
+  iframe {
+    width: calc(100% - 58px);
+  }
+
+  button {
+    width: 250px;
+  }
+  .social {
+    max-width: 350px;
+    margin: auto;
+    padding: 50px 0px;
+  }
+  .social img {
+    width: 40px;
+  }
+  .formcard {
+    width: 80vw;
+    height: 100vh;
+  }
+  form {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "name "
+      "addr"
+      "question"
+      "submit";
+  }
+  [name="name"],
+  [name="address"] {
+    margin: 10px 0px;
+  }
+  [name="letter"] {
+    height: 150px;
+  }
 }
-    .dropImg {
-        display: initial;
-    }
-   .hat {
-       display: none;
-   }
-    .dropImg:hover ~ .hat {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: absolute;
-        height: calc(100vh - 65px);
-        z-index: 10;
-        width: 80%;
-        background: #FFFFFF;
-    }
-    .dropdown {
-        border-bottom: none;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .dropdown span {
-        margin-bottom: 65px;
-    }
-
-    .add {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        height: 100%;
-    }
-    .cross img {
-        width: 23px;
-    }
-    .lang_btn_main {
-        display: none;
-    }
-    .lang_btn_header p {
-        transform-origin: right bottom;
-        transform: rotate(90deg);
-        margin-bottom: 0px;
-    }
-    
-    
-    .maininfo {
-        align-items: flex-start;
-        padding: 65px 26px 0px 26px;
-    }
-    h1 {
-        margin-bottom: 25px;
-    }
-    
-    .im figure {
-        margin: 35px 29px 83px 29px;
-        
-    }
-    .im img {
-         width: calc(100vw - 58px);
-         height: 470px;
-         object-fit: cover;
-    }
-    
-    
-    .aboutme, .skills, .portfolio, .contacts {
-        padding: 80px 29px;
-    }
-    
-    .skills_stars {
-        margin: 0px auto 80px auto;
-    }
-    iframe {
-        width: calc(100% - 58px);
-    }
-    
-    button {
-        width: 250px;
-    }
-    
-    .social {
-        max-width: 350px;
-        margin: auto;
-        padding: 50px 0px;
-        
-    }
-    .social img {
-        width: 40px;   
-    }
-    
+@media screen and (min-width: 720px) and (max-width: 919px) {
+  .hat {
+    width: 100%;
+  }
 }
-
 @media screen and (min-width: 920px) and (max-width: 1439px) {
-    header {
-        padding: 32px 72px 40px 72px;
-    }
-    .maininfo {
-        padding: 40px 72px 30px 72px;
-    }
-    
-    .im figure {
-        margin: 50px 72px 100px 72px;
-    }
-    .im img {
-        width: calc(100vw - 144px);
-    }
-    
-    .aboutme, .skills, .portfolio, .contacts {
-        padding: 110px 72px 100px 72px;
-    }    
+  header {
+    padding: 32px 72px 40px 72px;
+  }
+  .maininfo {
+    padding: 40px 72px 30px 72px;
+  }
 
+  .im figure {
+    margin: 50px 72px 100px 72px;
+  }
+  .im img {
+    width: calc(100vw - 144px);
+  }
+
+  .aboutme,
+  .skills,
+  .portfolio,
+  .contacts {
+    padding: 110px 72px 100px 72px;
+  }
 }
