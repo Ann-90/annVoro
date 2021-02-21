@@ -1,4 +1,4 @@
-window.addEventListener("onmessage", (e) => {
+window.addEventListener("message", (e) => {
   alert(e.data);
 });
 
