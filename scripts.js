@@ -1,7 +1,3 @@
-window.addEventListener("message", (e) => {
-  alert(e.data);
-});
-
 //translations
 let testtranslatearrRU = {
   Home: "Главная",
