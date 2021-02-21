@@ -1,3 +1,7 @@
+window.addEventListener("onmessage", (e) => {
+  console.log(e.data);
+});
+
 //translations
 let testtranslatearrRU = {
   Home: "Главная",
