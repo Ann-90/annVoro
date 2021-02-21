@@ -1,5 +1,5 @@
 window.addEventListener("onmessage", (e) => {
-  console.log(e.data);
+  alert(e.data);
 });
 
 //translations
